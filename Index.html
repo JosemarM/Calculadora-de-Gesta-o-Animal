@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.G.A</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Gestação</h1>
+        <h2 class="animal">Animal</h2>
+    </header>
+    <main>
+        <section>
+            <label for="especie">
+                <h4>
+                    Selecione o Animal:
+                    <select id="especie">
+                        <option value="cabra">Cabra</option>
+                        <option value="egua">Égua</option>
+                        <option value="ovelha">Ovelha</option>
+                        <option value="porca">Porca</option>
+                        <option value="vaca">Vaca</option>
+                    </select>
+                </h4>
+            </label>
+            <label for="dataInicio">
+               <h4>
+                Inicio da Gestação:
+                <input type="date" id="dataInicio">
+               </h4>
+               <h4>
+                Nome/Código do Animal:
+                <input type="text" id="nome">
+               </h4>
+            </label>
+            
+            
+        </section>
+        <section>
+            <button class="botao-calcular" onclick="calcular()">
+                <h3>Calcular</h3>
+            </button>
+        </section>
+        <section class ="resultado-data" id ="resultado-data">
+
+        </section>
+    </main>
+    <footer>
+        Projeto feito para imersão Alura com Google Gemini
+        <p><a href="https://www.pexels.com/pt-br/foto/tres-vacas-preto-e-branco-422218/">Foto de Matthias Zomer</a></p>
+    </footer>
+    <script src="./Js/script.js"></script>
+</body>
+</html>
